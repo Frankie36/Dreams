@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4BA3BA5D23602C1800416E44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA3BA5C23602C1800416E44 /* AppDelegate.swift */; };
+		4BA3BA5F23602C1800416E44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA3BA5E23602C1800416E44 /* SceneDelegate.swift */; };
+		4BA3BA6123602C1800416E44 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA3BA6023602C1800416E44 /* FirstViewController.swift */; };
+		4BA3BA6623602C1800416E44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA3BA6423602C1800416E44 /* Main.storyboard */; };
+		4BA3BA6923602C1800416E44 /* Dreamz.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4BA3BA6723602C1800416E44 /* Dreamz.xcdatamodeld */; };
+		4BA3BA6B23602C1D00416E44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BA3BA6A23602C1D00416E44 /* Assets.xcassets */; };
+		4BA3BA6E23602C1D00416E44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA3BA6C23602C1D00416E44 /* LaunchScreen.storyboard */; };
+		4BA3BA7923602C1D00416E44 /* DreamzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA3BA7823602C1D00416E44 /* DreamzTests.swift */; };
+		4BA3BA8423602C1D00416E44 /* DreamzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA3BA8323602C1D00416E44 /* DreamzUITests.swift */; };
+		4BA3BA9223602DFA00416E44 /* TagsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA3BA9123602DFA00416E44 /* TagsTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4BA3BA7523602C1D00416E44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BA3BA5123602C1800416E44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BA3BA5823602C1800416E44;
+			remoteInfo = Dreamz;
+		};
+		4BA3BA8023602C1D00416E44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BA3BA5123602C1800416E44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BA3BA5823602C1800416E44;
+			remoteInfo = Dreamz;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4BA3BA5923602C1800416E44 /* Dreamz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dreamz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BA3BA5C23602C1800416E44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4BA3BA5E23602C1800416E44 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4BA3BA6023602C1800416E44 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		4BA3BA6523602C1800416E44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4BA3BA6823602C1800416E44 /* Dreamz.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dreamz.xcdatamodel; sourceTree = "<group>"; };
+		4BA3BA6A23602C1D00416E44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4BA3BA6D23602C1D00416E44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4BA3BA6F23602C1D00416E44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BA3BA7423602C1D00416E44 /* DreamzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DreamzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BA3BA7823602C1D00416E44 /* DreamzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamzTests.swift; sourceTree = "<group>"; };
+		4BA3BA7A23602C1D00416E44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BA3BA7F23602C1D00416E44 /* DreamzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DreamzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BA3BA8323602C1D00416E44 /* DreamzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamzUITests.swift; sourceTree = "<group>"; };
+		4BA3BA8523602C1D00416E44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BA3BA9123602DFA00416E44 /* TagsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4BA3BA5623602C1800416E44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BA3BA7123602C1D00416E44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BA3BA7C23602C1D00416E44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4BA3BA5023602C1800416E44 = {
+			isa = PBXGroup;
+			children = (
+				4BA3BA5B23602C1800416E44 /* Dreamz */,
+				4BA3BA7723602C1D00416E44 /* DreamzTests */,
+				4BA3BA8223602C1D00416E44 /* DreamzUITests */,
+				4BA3BA5A23602C1800416E44 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4BA3BA5A23602C1800416E44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BA3BA5923602C1800416E44 /* Dreamz.app */,
+				4BA3BA7423602C1D00416E44 /* DreamzTests.xctest */,
+				4BA3BA7F23602C1D00416E44 /* DreamzUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BA3BA5B23602C1800416E44 /* Dreamz */ = {
+			isa = PBXGroup;
+			children = (
+				4BA3BA5C23602C1800416E44 /* AppDelegate.swift */,
+				4BA3BA5E23602C1800416E44 /* SceneDelegate.swift */,
+				4BA3BA6023602C1800416E44 /* FirstViewController.swift */,
+				4BA3BA6423602C1800416E44 /* Main.storyboard */,
+				4BA3BA6A23602C1D00416E44 /* Assets.xcassets */,
+				4BA3BA6C23602C1D00416E44 /* LaunchScreen.storyboard */,
+				4BA3BA6F23602C1D00416E44 /* Info.plist */,
+				4BA3BA6723602C1800416E44 /* Dreamz.xcdatamodeld */,
+				4BA3BA9123602DFA00416E44 /* TagsTableViewController.swift */,
+			);
+			path = Dreamz;
+			sourceTree = "<group>";
+		};
+		4BA3BA7723602C1D00416E44 /* DreamzTests */ = {
+			isa = PBXGroup;
+			children = (
+				4BA3BA7823602C1D00416E44 /* DreamzTests.swift */,
+				4BA3BA7A23602C1D00416E44 /* Info.plist */,
+			);
+			path = DreamzTests;
+			sourceTree = "<group>";
+		};
+		4BA3BA8223602C1D00416E44 /* DreamzUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4BA3BA8323602C1D00416E44 /* DreamzUITests.swift */,
+				4BA3BA8523602C1D00416E44 /* Info.plist */,
+			);
+			path = DreamzUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4BA3BA5823602C1800416E44 /* Dreamz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BA3BA8823602C1E00416E44 /* Build configuration list for PBXNativeTarget "Dreamz" */;
+			buildPhases = (
+				4BA3BA5523602C1800416E44 /* Sources */,
+				4BA3BA5623602C1800416E44 /* Frameworks */,
+				4BA3BA5723602C1800416E44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dreamz;
+			productName = Dreamz;
+			productReference = 4BA3BA5923602C1800416E44 /* Dreamz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4BA3BA7323602C1D00416E44 /* DreamzTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BA3BA8B23602C1E00416E44 /* Build configuration list for PBXNativeTarget "DreamzTests" */;
+			buildPhases = (
+				4BA3BA7023602C1D00416E44 /* Sources */,
+				4BA3BA7123602C1D00416E44 /* Frameworks */,
+				4BA3BA7223602C1D00416E44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BA3BA7623602C1D00416E44 /* PBXTargetDependency */,
+			);
+			name = DreamzTests;
+			productName = DreamzTests;
+			productReference = 4BA3BA7423602C1D00416E44 /* DreamzTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4BA3BA7E23602C1D00416E44 /* DreamzUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BA3BA8E23602C1E00416E44 /* Build configuration list for PBXNativeTarget "DreamzUITests" */;
+			buildPhases = (
+				4BA3BA7B23602C1D00416E44 /* Sources */,
+				4BA3BA7C23602C1D00416E44 /* Frameworks */,
+				4BA3BA7D23602C1D00416E44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BA3BA8123602C1D00416E44 /* PBXTargetDependency */,
+			);
+			name = DreamzUITests;
+			productName = DreamzUITests;
+			productReference = 4BA3BA7F23602C1D00416E44 /* DreamzUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4BA3BA5123602C1800416E44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Francis Ngunjiri";
+				TargetAttributes = {
+					4BA3BA5823602C1800416E44 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					4BA3BA7323602C1D00416E44 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 4BA3BA5823602C1800416E44;
+					};
+					4BA3BA7E23602C1D00416E44 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 4BA3BA5823602C1800416E44;
+					};
+				};
+			};
+			buildConfigurationList = 4BA3BA5423602C1800416E44 /* Build configuration list for PBXProject "Dreamz" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4BA3BA5023602C1800416E44;
+			productRefGroup = 4BA3BA5A23602C1800416E44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4BA3BA5823602C1800416E44 /* Dreamz */,
+				4BA3BA7323602C1D00416E44 /* DreamzTests */,
+				4BA3BA7E23602C1D00416E44 /* DreamzUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4BA3BA5723602C1800416E44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BA3BA6E23602C1D00416E44 /* LaunchScreen.storyboard in Resources */,
+				4BA3BA6B23602C1D00416E44 /* Assets.xcassets in Resources */,
+				4BA3BA6623602C1800416E44 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BA3BA7223602C1D00416E44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BA3BA7D23602C1D00416E44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4BA3BA5523602C1800416E44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BA3BA9223602DFA00416E44 /* TagsTableViewController.swift in Sources */,
+				4BA3BA6923602C1800416E44 /* Dreamz.xcdatamodeld in Sources */,
+				4BA3BA6123602C1800416E44 /* FirstViewController.swift in Sources */,
+				4BA3BA5D23602C1800416E44 /* AppDelegate.swift in Sources */,
+				4BA3BA5F23602C1800416E44 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BA3BA7023602C1D00416E44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BA3BA7923602C1D00416E44 /* DreamzTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BA3BA7B23602C1D00416E44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BA3BA8423602C1D00416E44 /* DreamzUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4BA3BA7623602C1D00416E44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BA3BA5823602C1800416E44 /* Dreamz */;
+			targetProxy = 4BA3BA7523602C1D00416E44 /* PBXContainerItemProxy */;
+		};
+		4BA3BA8123602C1D00416E44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BA3BA5823602C1800416E44 /* Dreamz */;
+			targetProxy = 4BA3BA8023602C1D00416E44 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4BA3BA6423602C1800416E44 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BA3BA6523602C1800416E44 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4BA3BA6C23602C1D00416E44 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BA3BA6D23602C1D00416E44 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4BA3BA8623602C1E00416E44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4BA3BA8723602C1E00416E44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4BA3BA8923602C1E00416E44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EW2322F9F6;
+				INFOPLIST_FILE = Dreamz/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mystique.com.Dreamz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4BA3BA8A23602C1E00416E44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EW2322F9F6;
+				INFOPLIST_FILE = Dreamz/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mystique.com.Dreamz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4BA3BA8C23602C1E00416E44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EW2322F9F6;
+				INFOPLIST_FILE = DreamzTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mystique.com.DreamzTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dreamz.app/Dreamz";
+			};
+			name = Debug;
+		};
+		4BA3BA8D23602C1E00416E44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EW2322F9F6;
+				INFOPLIST_FILE = DreamzTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mystique.com.DreamzTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dreamz.app/Dreamz";
+			};
+			name = Release;
+		};
+		4BA3BA8F23602C1E00416E44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EW2322F9F6;
+				INFOPLIST_FILE = DreamzUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mystique.com.DreamzUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dreamz;
+			};
+			name = Debug;
+		};
+		4BA3BA9023602C1E00416E44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EW2322F9F6;
+				INFOPLIST_FILE = DreamzUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mystique.com.DreamzUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dreamz;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4BA3BA5423602C1800416E44 /* Build configuration list for PBXProject "Dreamz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BA3BA8623602C1E00416E44 /* Debug */,
+				4BA3BA8723602C1E00416E44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BA3BA8823602C1E00416E44 /* Build configuration list for PBXNativeTarget "Dreamz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BA3BA8923602C1E00416E44 /* Debug */,
+				4BA3BA8A23602C1E00416E44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BA3BA8B23602C1E00416E44 /* Build configuration list for PBXNativeTarget "DreamzTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BA3BA8C23602C1E00416E44 /* Debug */,
+				4BA3BA8D23602C1E00416E44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BA3BA8E23602C1E00416E44 /* Build configuration list for PBXNativeTarget "DreamzUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BA3BA8F23602C1E00416E44 /* Debug */,
+				4BA3BA9023602C1E00416E44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4BA3BA6723602C1800416E44 /* Dreamz.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4BA3BA6823602C1800416E44 /* Dreamz.xcdatamodel */,
+			);
+			currentVersion = 4BA3BA6823602C1800416E44 /* Dreamz.xcdatamodel */;
+			path = Dreamz.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4BA3BA5123602C1800416E44 /* Project object */;
+}

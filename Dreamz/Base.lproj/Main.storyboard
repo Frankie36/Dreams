@@ -109,7 +109,7 @@
         <!--Add Dream-->
         <scene sceneID="lu0-Lb-92n">
             <objects>
-                <viewController id="4Nq-K3-YqC" sceneMemberID="viewController">
+                <viewController id="4Nq-K3-YqC" customClass="AddDreamViewController" customModule="Dreamz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LSZ-Eh-Goy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -143,6 +143,9 @@
                                         <rect key="frame" x="8" y="240" width="398" height="38"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <state key="normal" title="Done"/>
+                                        <connections>
+                                            <action selector="addDreamToDb:" destination="4Nq-K3-YqC" eventType="touchUpInside" id="Kzj-aQ-fu4"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -175,6 +178,10 @@
                         <viewLayoutGuide key="safeArea" id="ce3-j4-iER"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add Dream" id="Uj0-dG-mkF"/>
+                    <connections>
+                        <outlet property="txtDescription" destination="ri2-Zv-Z1O" id="P2p-of-A7F"/>
+                        <outlet property="txtTitle" destination="DyT-wb-UPJ" id="OWl-XL-uaZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fni-Fg-Jcx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

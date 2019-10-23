@@ -94,11 +94,91 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Calendar" id="eeC-oj-Lx5"/>
+                    <navigationItem key="navigationItem" title="Calendar" id="eeC-oj-Lx5">
+                        <barButtonItem key="rightBarButtonItem" title="Add Dream" image="plus" catalog="system" id="sQf-b6-V5f">
+                            <connections>
+                                <segue destination="4Nq-K3-YqC" kind="show" id="fZQ-bm-KPN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1659.4202898550725" y="-320.08928571428572"/>
+        </scene>
+        <!--Add Dream-->
+        <scene sceneID="lu0-Lb-92n">
+            <objects>
+                <viewController id="4Nq-K3-YqC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LSZ-Eh-Goy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sga-Fs-JqA">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbV-PD-kod">
+                                        <rect key="frame" x="8" y="8" width="398" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DyT-wb-UPJ">
+                                        <rect key="frame" x="8" y="29" width="398" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLW-1c-ESS">
+                                        <rect key="frame" x="8" y="79" width="398" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ri2-Zv-Z1O">
+                                        <rect key="frame" x="8" y="107.5" width="398" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dV9-Gc-6sf">
+                                        <rect key="frame" x="8" y="240" width="398" height="38"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="Done"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="ri2-Zv-Z1O" firstAttribute="top" secondItem="dLW-1c-ESS" secondAttribute="bottom" constant="8" id="3Bx-en-p6Y"/>
+                                    <constraint firstItem="dV9-Gc-6sf" firstAttribute="top" secondItem="ri2-Zv-Z1O" secondAttribute="bottom" constant="98.5" id="4hx-za-QKv"/>
+                                    <constraint firstAttribute="trailing" secondItem="dLW-1c-ESS" secondAttribute="trailing" constant="8" id="8uc-qb-pwp"/>
+                                    <constraint firstItem="dLW-1c-ESS" firstAttribute="top" secondItem="DyT-wb-UPJ" secondAttribute="bottom" constant="16" id="C7E-Ik-rj1"/>
+                                    <constraint firstItem="dLW-1c-ESS" firstAttribute="leading" secondItem="sga-Fs-JqA" secondAttribute="leading" constant="8" id="Gv4-x5-h4S"/>
+                                    <constraint firstItem="pbV-PD-kod" firstAttribute="bottom" secondItem="DyT-wb-UPJ" secondAttribute="top" id="Kuo-FI-Wmh"/>
+                                    <constraint firstItem="pbV-PD-kod" firstAttribute="leading" secondItem="sga-Fs-JqA" secondAttribute="leading" constant="8" id="UGI-qP-KFL"/>
+                                    <constraint firstItem="ri2-Zv-Z1O" firstAttribute="leading" secondItem="sga-Fs-JqA" secondAttribute="leading" constant="8" id="UUV-RQ-XL4"/>
+                                    <constraint firstItem="pbV-PD-kod" firstAttribute="top" secondItem="sga-Fs-JqA" secondAttribute="top" constant="8" id="Vdx-bF-SrA"/>
+                                    <constraint firstAttribute="trailing" secondItem="ri2-Zv-Z1O" secondAttribute="trailing" constant="8" id="c5s-Xo-tlV"/>
+                                    <constraint firstAttribute="trailing" secondItem="DyT-wb-UPJ" secondAttribute="trailing" constant="8" id="dJA-Ae-pw0"/>
+                                    <constraint firstItem="dV9-Gc-6sf" firstAttribute="leading" secondItem="sga-Fs-JqA" secondAttribute="leading" constant="8" id="iDb-mT-Bot"/>
+                                    <constraint firstAttribute="trailing" secondItem="dV9-Gc-6sf" secondAttribute="trailing" constant="8" id="ogR-Sm-1Zh"/>
+                                    <constraint firstAttribute="trailing" secondItem="pbV-PD-kod" secondAttribute="trailing" constant="8" id="oqd-Dp-UKg"/>
+                                    <constraint firstItem="DyT-wb-UPJ" firstAttribute="leading" secondItem="sga-Fs-JqA" secondAttribute="leading" constant="8" id="v7a-TM-gQ6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sga-Fs-JqA" firstAttribute="height" secondItem="ce3-j4-iER" secondAttribute="height" id="Umc-vu-PWM"/>
+                            <constraint firstItem="sga-Fs-JqA" firstAttribute="leading" secondItem="ce3-j4-iER" secondAttribute="leading" id="Vuw-59-E6m"/>
+                            <constraint firstItem="sga-Fs-JqA" firstAttribute="width" secondItem="ce3-j4-iER" secondAttribute="width" id="ojy-Om-fg6"/>
+                            <constraint firstItem="sga-Fs-JqA" firstAttribute="top" secondItem="ce3-j4-iER" secondAttribute="top" id="xte-FC-eG2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ce3-j4-iER"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Dream" id="Uj0-dG-mkF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fni-Fg-Jcx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2611.594202898551" y="-320.08928571428572"/>
         </scene>
         <!--Tags-->
         <scene sceneID="45C-xL-bE0">
@@ -197,6 +277,7 @@
     </scenes>
     <resources>
         <image name="calendar" catalog="system" width="64" height="54"/>
+        <image name="plus" catalog="system" width="64" height="58"/>
         <image name="tag" catalog="system" width="64" height="58"/>
     </resources>
 </document>

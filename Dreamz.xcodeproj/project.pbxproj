@@ -11,6 +11,7 @@
 		4B3A1A10236038E400BDA43D /* Dream+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3A1A0E236038E400BDA43D /* Dream+CoreDataProperties.swift */; };
 		4B3A1A1223603E8B00BDA43D /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3A1A1123603E8B00BDA43D /* CalendarViewController.swift */; };
 		4B3A1A192360426100BDA43D /* DreamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3A1A182360426100BDA43D /* DreamTableViewCell.swift */; };
+		4B3A1A1B23604C5C00BDA43D /* DreamsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3A1A1A23604C5C00BDA43D /* DreamsTableViewController.swift */; };
 		4BA3BA5D23602C1800416E44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA3BA5C23602C1800416E44 /* AppDelegate.swift */; };
 		4BA3BA5F23602C1800416E44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA3BA5E23602C1800416E44 /* SceneDelegate.swift */; };
 		4BA3BA6623602C1800416E44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA3BA6423602C1800416E44 /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 		4B3A1A0E236038E400BDA43D /* Dream+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dream+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4B3A1A1123603E8B00BDA43D /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		4B3A1A182360426100BDA43D /* DreamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamTableViewCell.swift; sourceTree = "<group>"; };
+		4B3A1A1A23604C5C00BDA43D /* DreamsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamsTableViewController.swift; sourceTree = "<group>"; };
 		4BA3BA5923602C1800416E44 /* Dreamz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dreamz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BA3BA5C23602C1800416E44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BA3BA5E23602C1800416E44 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				4BA3BA6F23602C1D00416E44 /* Info.plist */,
 				4BA3BA9123602DFA00416E44 /* TagsTableViewController.swift */,
 				4B3A1A1123603E8B00BDA43D /* CalendarViewController.swift */,
+				4B3A1A1A23604C5C00BDA43D /* DreamsTableViewController.swift */,
 			);
 			path = Dreamz;
 			sourceTree = "<group>";
@@ -446,6 +449,7 @@
 				4B3A1A1223603E8B00BDA43D /* CalendarViewController.swift in Sources */,
 				4B3A1A0F236038E400BDA43D /* Dream+CoreDataClass.swift in Sources */,
 				4B3A1A192360426100BDA43D /* DreamTableViewCell.swift in Sources */,
+				4B3A1A1B23604C5C00BDA43D /* DreamsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

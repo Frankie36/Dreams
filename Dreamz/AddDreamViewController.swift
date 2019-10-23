@@ -41,13 +41,13 @@ class AddDreamViewController: UIViewController {
             return
         }
         
-        let data = Dream()
         let dream = Dream(entity: Dream.entity(), insertInto: context)
         
         dream.title = txtTitle.text
         dream.details = txtDescription.text
         appDelegate.saveContext()
         dreams.append(dream)
+        
         let index = IndexPath(row:dreams.count - 1, section:0)
         
         self.dismiss(animated: true, completion: nil)

@@ -10,6 +10,10 @@ import UIKit
 
 class DreamsTableViewController: UITableViewController {
     
+    private let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    private let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    var dreams = [Dream]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -18,6 +22,15 @@ class DreamsTableViewController: UITableViewController {
         
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        do {
+          dreams = try context.fetch(Dream.fetchRequest())
+        } catch let error as NSError {
+          print("Could not fetch. \(error), \(error.userInfo)")
+        }
     }
     
     // MARK: - Table view data source
@@ -29,12 +42,14 @@ class DreamsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 3
+        return dreams.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellDream", for: indexPath) as! DreamTableViewCell
         // Configure the cell...
+        cell.lblTitle.text = dreams[indexPath.row].title
+        cell.lblDescription.text = dreams[indexPath.row].details
         
         return cell
     }

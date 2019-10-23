@@ -7,36 +7,94 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Calendar-->
+        <!--Data Source-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController title="Calendar" id="9pv-A4-QxB" customClass="FirstViewController" customModule="Dreamz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Calendar" id="9pv-A4-QxB" customClass="CalendarViewController" customModule="Dreamz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="131.5" y="426.5" width="151" height="43"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="15X-pm-QGp" customClass="FSCalendar">
+                                <rect key="frame" x="0.0" y="88" width="414" height="200"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <rect key="frame" x="110" y="477.5" width="194.5" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="xY0-VA-Xa8"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="9pv-A4-QxB" id="1rJ-q6-ZR6"/>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="pEK-Lf-RPc"/>
+                                </connections>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dOj-wi-oor">
+                                <rect key="frame" x="0.0" y="292" width="414" height="521"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellDream" id="DAP-OJ-5Cq" customClass="DreamTableViewCell" customModule="Dreamz" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="62"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DAP-OJ-5Cq" id="3LM-O4-JWt">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="62"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sn3-PL-QLn" userLabel="Tag">
+                                                    <rect key="frame" x="4" y="11" width="406" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeG-KD-1g4" userLabel="Title">
+                                                    <rect key="frame" x="4" y="21.5" width="406" height="20"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oRi-XW-bEA" userLabel="Desc">
+                                                    <rect key="frame" x="4" y="37.5" width="406" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="aeG-KD-1g4" firstAttribute="leading" secondItem="3LM-O4-JWt" secondAttribute="leading" constant="4" id="48E-cF-GMv"/>
+                                                <constraint firstItem="sn3-PL-QLn" firstAttribute="top" secondItem="3LM-O4-JWt" secondAttribute="top" constant="11" id="QMS-dA-YVa"/>
+                                                <constraint firstItem="sn3-PL-QLn" firstAttribute="bottom" secondItem="aeG-KD-1g4" secondAttribute="top" constant="4" id="S6a-2L-dWs"/>
+                                                <constraint firstItem="aeG-KD-1g4" firstAttribute="bottom" secondItem="oRi-XW-bEA" secondAttribute="top" constant="4" id="Wvv-wB-LeN"/>
+                                                <constraint firstAttribute="trailing" secondItem="aeG-KD-1g4" secondAttribute="trailing" constant="4" id="avG-h3-e4v"/>
+                                                <constraint firstItem="oRi-XW-bEA" firstAttribute="leading" secondItem="3LM-O4-JWt" secondAttribute="leading" constant="4" id="bbb-Z0-PMg"/>
+                                                <constraint firstAttribute="trailing" secondItem="sn3-PL-QLn" secondAttribute="trailing" constant="4" id="epq-cx-ILt"/>
+                                                <constraint firstItem="sn3-PL-QLn" firstAttribute="leading" secondItem="3LM-O4-JWt" secondAttribute="leading" constant="4" id="q70-wv-Rgy"/>
+                                                <constraint firstAttribute="trailing" secondItem="oRi-XW-bEA" secondAttribute="trailing" constant="4" id="t6U-94-NyP"/>
+                                                <constraint firstAttribute="bottom" secondItem="oRi-XW-bEA" secondAttribute="bottom" constant="4" id="u9A-Nl-f3y"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblDescription" destination="oRi-XW-bEA" id="J8o-Yk-JbC"/>
+                                            <outlet property="lblTag" destination="sn3-PL-QLn" id="2y9-UH-Ve3"/>
+                                            <outlet property="lblTitle" destination="aeG-KD-1g4" id="XZT-R2-xIq"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="9pv-A4-QxB" id="Ex7-dj-mXP"/>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="Fkg-IG-sJw"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstItem="dOj-wi-oor" firstAttribute="top" secondItem="15X-pm-QGp" secondAttribute="bottom" constant="4" id="5KZ-T4-ekH"/>
+                            <constraint firstItem="dOj-wi-oor" firstAttribute="width" secondItem="PQr-Ze-W5v" secondAttribute="width" id="5dL-wV-BRz"/>
+                            <constraint firstItem="dOj-wi-oor" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="fsZ-uI-i3h"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="dOj-wi-oor" secondAttribute="bottom" id="r2o-Jq-KR8"/>
+                            <constraint firstItem="15X-pm-QGp" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="syf-kb-40F"/>
+                            <constraint firstItem="15X-pm-QGp" firstAttribute="width" secondItem="PQr-Ze-W5v" secondAttribute="width" id="uOF-R6-7WE"/>
+                            <constraint firstItem="15X-pm-QGp" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="vHN-dV-385"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <navigationItem key="navigationItem" id="eeC-oj-Lx5"/>
+                    <navigationItem key="navigationItem" title="Calendar" id="eeC-oj-Lx5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -74,7 +132,7 @@
                             <outlet property="delegate" destination="Yeg-Bu-1Oo" id="emw-uU-jTc"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="OKn-vU-KuR"/>
+                    <navigationItem key="navigationItem" title="Tags" id="OKn-vU-KuR"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zIc-NB-bed" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

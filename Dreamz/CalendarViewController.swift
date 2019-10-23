@@ -13,16 +13,15 @@ class CalendarViewController: UIViewController, FSCalendarDataSource, FSCalendar
     private let appDelegate = UIApplication.shared.delegate as! AppDelegate
     private let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 
+    @IBOutlet weak var tableView: UITableView!
     var dreams = [Dream]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        do {
-          dreams = try context.fetch(Dream.fetchRequest())
-        } catch let error as NSError {
-          print("Could not fetch. \(error), \(error.userInfo)")
-        }
         // Do any additional setup after loading the view.
+        DispatchQueue.main.async {
+        self.tableView.reloadData()
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -48,8 +47,10 @@ class CalendarViewController: UIViewController, FSCalendarDataSource, FSCalendar
         return cell
     }
     
-
-
+    @IBAction func refreshData(_ sender: Any) {
+        tableView.reloadData()
+    }
+    
     /*
     // MARK: - Navigation
 

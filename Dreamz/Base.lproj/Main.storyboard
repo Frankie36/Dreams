@@ -95,12 +95,22 @@
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <navigationItem key="navigationItem" title="Calendar" id="eeC-oj-Lx5">
-                        <barButtonItem key="rightBarButtonItem" title="Add Dream" image="plus" catalog="system" id="sQf-b6-V5f">
-                            <connections>
-                                <segue destination="4Nq-K3-YqC" kind="show" id="fZQ-bm-KPN"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Refresh" image="arrow.clockwise" catalog="system" id="UFf-W8-Enz">
+                                <connections>
+                                    <action selector="refreshData:" destination="9pv-A4-QxB" id="tKj-zI-v8d"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Add Dream" image="plus" catalog="system" id="sQf-b6-V5f">
+                                <connections>
+                                    <segue destination="4Nq-K3-YqC" kind="show" id="fZQ-bm-KPN"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="dOj-wi-oor" id="ura-8p-WAK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -352,6 +362,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.clockwise" catalog="system" width="56" height="64"/>
         <image name="calendar" catalog="system" width="64" height="54"/>
         <image name="plus" catalog="system" width="64" height="58"/>
         <image name="tag" catalog="system" width="64" height="58"/>

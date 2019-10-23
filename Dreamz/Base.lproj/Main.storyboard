@@ -10,7 +10,7 @@
         <!--Calendar-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="Dreamz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Calendar" id="9pv-A4-QxB" customClass="FirstViewController" customModule="Dreamz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,16 +36,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Calendar" image="calendar" catalog="system" id="acW-dT-cKf"/>
+                    <navigationItem key="navigationItem" id="eeC-oj-Lx5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="1659.4202898550725" y="-320.08928571428572"/>
         </scene>
         <!--Tags-->
         <scene sceneID="45C-xL-bE0">
             <objects>
-                <tableViewController id="Yeg-Bu-1Oo" customClass="TagsTableViewController" customModule="Dreamz" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Tags" id="Yeg-Bu-1Oo" customClass="TagsTableViewController" customModule="Dreamz" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Aw5-MD-ICg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,11 +74,11 @@
                             <outlet property="delegate" destination="Yeg-Bu-1Oo" id="emw-uU-jTc"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Tags" image="tag" catalog="system" id="atk-JI-hcU"/>
+                    <navigationItem key="navigationItem" id="OKn-vU-KuR"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zIc-NB-bed" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749" y="406"/>
+            <point key="canvasLocation" x="1657.9710144927537" y="405.80357142857139"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -90,13 +90,51 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="Yeg-Bu-1Oo" kind="relationship" relationship="viewControllers" id="cTJ-wF-wcS"/>
+                        <segue destination="6FW-if-hBA" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="Awm-sK-AjF" kind="relationship" relationship="viewControllers" id="cTJ-wF-wcS"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--Calendar-->
+        <scene sceneID="VEd-DN-aW6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6FW-if-hBA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Calendar" image="calendar" catalog="system" id="acW-dT-cKf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Iq6-xx-r09">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="aCN-IG-ZDp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vr5-qy-diR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.27536231884062" y="-320.08928571428572"/>
+        </scene>
+        <!--Tags-->
+        <scene sceneID="kVz-nC-d9P">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Awm-sK-AjF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Tags" image="tag" catalog="system" id="atk-JI-hcU"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sT4-cf-LX2">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Yeg-Bu-1Oo" kind="relationship" relationship="rootViewController" id="BHa-94-mcK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="an5-zm-cnz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="747.82608695652175" y="405.80357142857139"/>
         </scene>
     </scenes>
     <resources>
